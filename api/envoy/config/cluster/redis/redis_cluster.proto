@@ -34,12 +34,12 @@ import "validate/validate.proto";
 //       address: foo.bar.com
 //       port_value: 22120
 //     cluster_type:
-//     name: envoy.clusters.redis
-//     typed_config:
-//       "@type": type.googleapis.com/google.protobuf.Struct
-//       value:
-//         cluster_refresh_rate: 30s
-//         cluster_refresh_timeout: 0.5s
+//       name: envoy.clusters.redis
+//       typed_config:
+//         "@type": type.googleapis.com/google.protobuf.Struct
+//         value:
+//           cluster_refresh_rate: 30s
+//           cluster_refresh_timeout: 0.5s
 
 message RedisClusterConfig {
   // Interval between successive topology refresh requests. If not set, this defaults to 5s.
